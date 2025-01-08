@@ -6,7 +6,7 @@ metadata:
     app: nginx
 spec:
   selector:
-    app: nginx-pod
+    app: nginx
   ports:
     - protocol: TCP
       port: 80

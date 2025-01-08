@@ -8,15 +8,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx-pod
+      app: nginx
   template:
     metadata:
       labels:
-        app: nginx-pod
+        app: nginx
     spec:
       containers:
         - name: app-nginx-container
-          image: distinctugo/new-app:v1
+          image: distinctugo/new-app:v2
           ports:
             - containerPort: 80
           readinessProbe:
